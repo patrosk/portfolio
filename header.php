@@ -8,6 +8,8 @@
     <?php wp_head(); ?>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tailwindcss/typography@0.5.x/dist/typography.min.css" />
+    <link rel="stylesheet" href="<?php
+                                    wp_enqueue_style('style', get_stylesheet_uri()); ?>">
 </head>
 
 <body <?php body_class(); ?>>
