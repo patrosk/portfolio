@@ -12,3 +12,6 @@ add_action('wp_enqueue_scripts', function () {
 });
 
 add_theme_support('post-thumbnails');
+
+require get_template_directory() . '/post-types/project.php';
+require get_template_directory() . '/taxonomies/tool.php';
